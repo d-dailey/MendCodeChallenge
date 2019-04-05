@@ -33,7 +33,8 @@ https.get('https://www.senate.gov/general/contact_information/senators_cfm.xml',
         obj.members.push({
           "firstName" : senateDataObj.contact_information.member[member].first_name,
           "lastName" : senateDataObj.contact_information.member[member].last_name,
-          "fullName" : senateDataObj.contact_information.member[member].first_name + " " + senateDataObj.contact_information.member[member].last_name,
+          "fullName" : senateDataObj.contact_information.member[member].first_name +
+                        " " + senateDataObj.contact_information.member[member].last_name,
           "chartId" : senateDataObj.contact_information.member[member].bioguide_id,
           "mobile" : senateDataObj.contact_information.member[member].phone,
           "address" : [{"street": strSplit[0] + " " + strSplit[1] + " " + strSplit[2] + " " + strSplit[3] + " " + strSplit[4],
